@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s linear;
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 15px;
+    -webkit-text-stroke: 2px black;
+    text-stroke: 2px black;
+    color: transparent;
+    -webkit-text-fill-color: hsl(192, 80%, 61%);
+    text-fill-color: hsl(192, 80%, 61%);
+}
+
+body {
+    background-color: rgb(215, 253, 253);
+    font-family: "poppins", sans-serif;
+}
+
+
+.menu-bar ul {
+    background: rgb(215, 253, 253);
+    text-align: center;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.menu-bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar {
+    background-color: #8cbdc2;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar li {
+    margin-right: 50px;
+  }
+  
+  .navbar li a {
+    color: #000;
+    text-decoration: none;
+  }
+
+.navbar li a {
+    color: #000;
+    text-decoration: none;
+}
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    flex-basis: 25%; /* Adjust the width of the sidebar */
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Styling for the sidebar sections */
+.sidebar-section {
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Image styles within content sections */
+.content-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal content styles */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Close button styles */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Styles for video elements */
+.content-section video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+    }
+    
+    .navbar li {
+        margin-right: 0;
+    }
+}
+
+/* Background color for the body */
+body {
+    background-color: rgb(215, 253, 253);
+}
+
+.multiple-choice {
+    list-style-type: none; /* Removes the default list styling */
+    padding: 0;
+}
+
+.multiple-choice li {
+    margin-bottom: 10px;
+}
+
+
+    .cytosol-content {
+        font-family: 'Roboto', sans-serif;
+        max-width: 900px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .content-section {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .content-section h2 {
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .content-section video {
+        display: block;
+        margin: auto;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    .content-section p {
+        background-color: white;
+        border-left: 4px solid #007bff;
+        padding: 10px;
+        color: #555;
+        line-height: 1.6;
+    }
+
+    .content-section p strong {
+        color: #007bff;
+        font-size: 18px;
+    }
+
+
+
+

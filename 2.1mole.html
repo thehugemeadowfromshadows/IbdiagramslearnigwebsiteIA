@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to cells - BIOMAPS</title>
+    <link rel="stylesheet" href="ultrastructureofcells.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="BIOMAPS.jpg" height="150" alt="Logo">
+                <h1>BIOMAPS</h1>
+            </div>
+            <hr>
+            <nav class="navbar" id="navbar">
+                <ul>
+                    <li><a href="index.html">Home page</a></li>
+                    <li><a href="SLtopic.html">SL topics</a></li>
+                    <li><a href="HLtopic.html">HL topics</a></li>
+                    <li><a href="login.html">Log in</a></li>
+                    <li class="navbar-toggle" id="navbar-toggle">&#9776;</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main-container">
+        <aside class="sidebar">
+            <!-- Glucose and Ribose Sidebar Section -->
+            <section id="cytosol-info" class="sidebar-section">
+                <div id="cytosol-buttons">
+                    <button id="definitionButtonCytosol">Definitions</button>
+                    <button id="videoButtonCytosol">3D Videos for Clarification</button>
+                    <button id="questionsButtonCytosol">Exam Style Questions</button>
+                </div>
+                <h2>Glucose and Ribose</h2>
+                <p>Bacteria are single-celled prokaryotic organisms. They are smaller than animal and plant cells (eukaryotic cells), and they contain all the structures needed for their survival. Bacterial cells have two types of non-membrane-bound structures that contain their DNA—a circular chromosome that contains their essential genes and several small, circular plasmids that contain nonessential genes such as antibiotic resistance genes. This model shows a gram-negative bacterial cell.</p>
+            </section>
+
+            <!-- Eukaryotic Cell Sidebar Section -->
+            <section id="eukaryotic-cell-info" class="sidebar-section">
+                <div id="eukaryotic-cell-buttons">
+                    <button id="definitionButtonEukaryotic">Definition</button>
+                    <button id="videoButtonEukaryotic">3D Video for Clarification</button>
+            
+                </div>
+                <h2>Saturated Fatty Acid and Generalized Amino Acid</h2>
+                <p>Eukaryotes are organisms whose cells contain a nucleus ('eu' = good / true ; 'karyon' = nucleus) They have a more complex structure and are believed to have evolved from prokaryotic cells (via endosymbiosis)</p>
+            </section>
+        </aside>
+        <div class="content">
+            <!-- Content for glucose and ribose Information -->
+            <div class="cytosol-content">
+                <div id="definitionsContentCytosol" class="content-section" style="display: none;">
+                    <h2>Definitions for glucose and ribose</h2>
+                    <video width="320" height="240" autoplay loop muted>
+                        <source src="glucose3D.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video width="320" height="240" autoplay loop muted>
+                        <source src="Ribose3D.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>
+                        <strong>Glucose</strong><br>
+                
+                            <strong>Chemical Identity:</strong> Glucose is a monosaccharide, the simplest form of carbohydrate. Its chemical formula is C₆H₁₂O₆.<br>
+                            <strong>Structure:</strong> It consists of six carbon atoms, forming a hexagonal ring in its cyclic form. There are two cyclic forms of glucose, α-glucose and β-glucose, which differ in the position of the hydroxyl group (-OH) attached to the first carbon atom.<br>
+                            <strong>Isomers:</strong> Glucose has several isomers, including fructose and galactose, which have the same molecular formula but differ in the arrangement of atoms.<br>
+                            <strong>Role in Nature:</strong> Glucose is a primary source of energy for cells in many organisms. It's involved in cellular respiration and is a key substrate in various metabolic pathways.<br>
+                            <strong>Sources:</strong> Commonly found in fruits, honey, and in the blood of animals as blood sugar.<br>
+                            <strong>Commercial Use:</strong> Widely used in the food industry as a sweetener and a preservative.<br>
+                        
+                    </p>
+
+                    <p>
+                        <strong>Ribose</strong><br>
+                        <strong>Chemical Identity:</strong> Ribose is also a monosaccharide, with the chemical formula C₅H₁₀O₅.<br>
+                        <strong>Structure:</strong> It is composed of five carbon atoms, forming a pentagonal ring in its cyclic form. Ribose is an aldopentose, meaning it contains five carbons and includes an aldehyde group.<br>
+                        <strong>Role in Nature:</strong> Crucially important in biochemistry, ribose is a component of RNA (ribonucleic acid). It forms the backbone of RNA, connecting with phosphate groups and nitrogenous bases.<br>
+                        <strong>Prsesnce in DNA:</strong> In deoxyribose, a derivative of ribose, the sugar found in DNA, one of the hydroxyl groups is replaced by a hydrogen, hence the "deoxy" in the name.<br>
+                        <strong>Importance in ATP:</strong> Ribose is also a component of ATP (adenosine triphosphate), which is vital for energy transfer in cells.<br>
+                        <strong>Sources and Uses:</strong> Not as commonly found in the diet as glucose, but it is available in RNA-rich foods and is used in some health supplements.
+                    </p>
+                </div>
+
+
+                <div id="videoContentCytosol" class="content-section" style="display: none;">
+                    <h2>Video for how to draw Glucose and Ribose</h2>
+                    <video width="320" height="240" controls>
+                            <source src="draw ribose and glucose structure.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+
+
+                <div id="questionsContentCytosol" class="content-section">
+                    <h2>Questions about Glucose, ribose, saturated fatty acids and generalzied amino acids, because IB mostly mixes them</h2>
+                    <form id="questionsForm">
+                        <!-- Question 1 -->
+                        <p><strong>Question 1:  Which of the following is a key difference between glucose and ribose?</strong></p>
+                        <ul class="multiple-choice">
+                            <li><input type="radio" name="question1" value="option1"> Option A:  Glucose is a hexose sugar, while ribose is a pentose sugar.</li>
+                            <li><input type="radio" name="question1" value="option2"> Option B:  Glucose is primarily involved in energy metabolism, while ribose forms part of RNA structure.</li>
+                            <li><input type="radio" name="question1" value="option3"> Option C:  Glucose cannot form nucleic acids, while ribose is a key component of RNA.</li>
+                            <li><input type="radio" name="question1" value="option4"> Option D: Glucose is usually found in a ring form in cells, whereas ribose is often found in a linear form.</li>
+                            </ul>
+                        <div id="feedback1"></div>
+                
+                        <!-- Question 2 -->
+                        Which of the following is a key difference between glucose and ribose?
+                        <p><strong>Question 2: Which of the molecule diagrams below correctly represents an aD-glucose molecule?</strong></p>
+                        <img src="drawing_glucose_question.png" alt="Eukary">
+                        <ul class="multiple-choice">
+                            <li><input type="radio" name="question2" value="option1"> Option A: </li>
+                            <li><input type="radio" name="question2" value="option2"> Option B: </li>
+                            <li><input type="radio" name="question2" value="option3"> Option C: </li>
+                            <li><input type="radio" name="question2" value="option4"> Option D: </li>
+                        </ul>
+                        <div id="feedback2"></div>
+                
+                        <!-- Question 3 -->
+                        <p><strong>Question 3: In the context of molecular biology, why is ribose important in RNA molecules?</strong></p>
+                        <ul class="multiple-choice">
+                            <li><input type="radio" name="question3" value="option1"> Option A: It forms the phosphate backbone</li>
+                            <li><input type="radio" name="question3" value="option2"> Option B: It acts as a nitrogenous base</li>
+                            <li><input type="radio" name="question3" value="option3"> Option C: It provides structural framework connecting nitrogenous bases and phosphate groups</li>
+                            <li><input type="radio" name="question3" value="option4"> Option D: It is involved in the formation of hydrogen bonds between base pairs</li>
+                        </ul>
+                        <div id="feedback3"></div>
+                
+                        <!-- Question 4 -->
+                        <p><strong>Question 4: Which of the following statements accurately describes a property of glucose?</strong></p>
+                        <ul class="multiple-choice">
+                            <li><input type="radio" name="question4" value="option1"> Option A: Glucose is primarily used in cells for long-term energy storage</li>
+                            <li><input type="radio" name="question4" value="option2"> Option B: Glucose molecules are hydrophobic and pass easily through the cell membrane</li>
+                            <li><input type="radio" name="question4" value="option3"> Option C: Glucose is a monosaccharide that plays a crucial role in energy production during cellular respiration</li>
+                            <li><input type="radio" name="question4" value="option4"> Option D: Glucose is only found in animal cells, not in plant cells</li>
+                        </ul>
+                        <div id="feedback4"></div>
+                
+                        <!-- Question 5 -->
+                        <p><strong>Question 5: Ribose differs from deoxyribose by having:</strong></p>
+                        <ul class="multiple-choice">
+                            <li><input type="radio" name="question5" value="option1"> Option A: An extra hydroxyl group (-OH) on the second carbon</li>
+                            <li><input type="radio" name="question5" value="option2"> Option B: One less oxygen atom on the first carbon</li>
+                            <li><input type="radio" name="question5" value="option3"> Option C: An extra hydroxyl group (-OH) on the fifth carbon</li>
+                            <li>
+                                <div id="feedback5"></div>
+                                <button type="submit">Submit Answers</button>
+                 </li>
+                </form> 
+                 </ul> 
+                 </div>     
+
+            <!-- Content for the Eukaryotic Cell Information -->
+            <div class="eukaryotic-cell-content">
+                <div id="definitionsContentEukaryotic" class="content-section" style="display: none;">
+                <h2>Definitions for Saturated Fatty Acid and Generalized Amino Acid</h2>
+                <h2>Saturated Fatty Acid</h2>
+                    <img src="Palmitic-acid-3D-balls.png">
+            <h2>Generalized Amino Acid</h2>
+                <img src="0D6A7507_Clippedcopy-2.webp">
+                <p>
+                    <strong>Saturated Fatty Acids</strong><br>
+                    
+                    <strong>Chemical Identity:</strong> Saturated fatty acids are a type of fat molecule without double bonds between carbon atoms. Their general formula is CH₃(CH₂)nCOOH, where 'n' is a variable number of carbon atoms.<br>
+                    <strong>Structure:</strong> They consist of a long hydrocarbon chain with a single covalent bond between carbon atoms and a carboxylic acid group at one end.<br>
+                    <strong>Characteristics:</strong> Due to the lack of double bonds, they are typically solid at room temperature and are found in animal fats and some plant oils.<br>
+                    <strong>Role in Nutrition:</strong> Saturated fatty acids are important for energy storage, cellular membrane structure, and as precursors for various biological compounds.<br>
+                    <strong>Sources:</strong> Common sources include butter, cheese, red meat, and certain plant oils like coconut oil.<br>
+                    <strong>Health Implications:</strong> Excessive consumption can contribute to cardiovascular diseases, but they are essential in moderation for balanced nutrition.<br>
+                </p>
+                
+                <p>
+                    <strong>Generalized Amino Acid</strong><br>
+                    <strong>Chemical Identity:</strong> Amino acids are organic compounds that serve as the building blocks of proteins. Their general formula is NH₂CH(R)COOH, where 'R' is a variable side chain.<br>
+                    <strong>Structure:</strong> Each amino acid contains an amine group (NH₂), a carboxylic acid group (COOH), and a distinctive side chain (R group), attached to a central carbon atom.<br>
+                    <strong>Types:</strong> There are 20 standard amino acids that make up proteins, each with a unique R group that determines its properties.<br>
+                    <strong>Role in Nature:</strong> Amino acids are crucial for protein synthesis, playing key roles in various metabolic processes and cellular functions.<br>
+                    <strong>Protein Structure:</strong> The sequence and nature of amino acids in a protein determine its structure and function.<br>
+                    <strong>Importance in Diet:</strong> Essential amino acids must be obtained through diet, as they are not synthesized by the human body.<br>
+                    <strong>Sources:</strong> Found in high-protein foods like meat, eggs, dairy products, and legumes, as well as in some plant-based sources.<br>
+                </p>
+                
+                </div>
+                <div id="videoContentEukaryotic" class="content-section" style="display: none;">
+                <h2>3D video for Clarification</h2>
+                <video width="320" height="240" controls>
+                    <source src="2.1 Skill_ Drawing molecular diagrams of glucose, ribose, saturated fatty acid and an amino acid.mp4   " type="video/mp4">
+                </video>
+                </div>
+
+
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <script type="module" src="2.1mole.js"></script>
+</body>
+</html>
