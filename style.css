@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s linear;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: rgb(215, 253, 253);
+}
+
+.menu-bar ul {
+    background: rgb(215, 253, 253);
+    text-align: center;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.menu-bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.active, .menu-bar ul li:hover {
+    background: #463cd9;
+    border-radius: 3px;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text {
+        padding: 20px; /* Add padding around the text */
+        margin: 20px; /* Add margin to provide space between the text and other elements */
+    }
+
+
+.image {
+    float: right;
+}
+
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 15px;
+    -webkit-text-stroke: 2px black;
+    text-stroke: 2px black;
+    color: transparent;
+    -webkit-text-fill-color: hsl(192, 80%, 61%);
+    text-fill-color: hsl(192, 80%, 61%);
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 15px;
+    -webkit-text-stroke: 2px black;
+    text-stroke: 2px black;
+    color: transparent;
+    -webkit-text-fill-color: hsl(192, 46%, 47%);
+    text-fill-color: hsl(192, 80%, 61%);
+}
+
+.button-container {
+    display: flex; /* Enable Flexbox */
+    flex-direction: row; /* Stack buttons vertically */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: calc(100vh - 150px); /* Full height minus the header */
+    text-align: center; /* Center the text inside the buttons */
+  }
+
+  .btn {
+    margin: 0 10px;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 50px; /* Increased font size */
+    padding: 20px 30px; /* Increased padding */
+    background: #8cbdc2;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    display: inline-block; /* Ensures that the padding and margin are applied correctly */
+    cursor: pointer; /* Changes the mouse cursor to a pointer on hover */
+}
+
+.btn:hover {
+    letter-spacing: 1px;
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+
+.container {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+.box {
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.box img {
+    height: 70px;
+}
+
+.box h3 {
+    color: #444;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.box p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.btn {
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #8cbdc2;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn:hover {
+    letter-spacing: 1px;
+}
+
+.box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 770px) {
+    .wrapper {
+        padding: 20px;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #8cbdc2;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+
+
+.footeNav {
+    margin: 150px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footerNav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    background-color: #8cbdc2;
+    padding: 50px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: #fff;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar {
+    background-color: #8cbdc2;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar li {
+    margin-right: 10px;
+}
+
+.navbar li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+}
