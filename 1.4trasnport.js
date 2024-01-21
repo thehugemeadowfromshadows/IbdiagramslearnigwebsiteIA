@@ -10,21 +10,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const definitionButtonCytosol = document.getElementById('definitionButtonCytosol');
     const videoButtonCytosol = document.getElementById('videoButtonCytosol');
     const questionsButtonCytosol = document.getElementById('questionsButtonCytosol');
-
-    // Eukaryotic cell buttons
-    const definitionButtonEukaryotic = document.getElementById('definitionButtonEukaryotic');
-    const videoButtonEukaryotic = document.getElementById('videoButtonEukaryotic');
-    
+   
 
     // Cytosol content sections
     const definitionsContentCytosol = document.getElementById('definitionsContentCytosol');
     const videoContentCytosol = document.getElementById('videoContentCytosol');
     const questionsContentCytosol = document.getElementById('questionsContentCytosol');
 
-    // Eukaryotic cell content sections
-    const definitionsContentEukaryotic = document.getElementById('definitionsContentEukaryotic');
-    const videoContentEukaryotic = document.getElementById('videoContentEukaryotic');
-    
+   
 
     // Event listeners for cytosol buttons
     definitionButtonCytosol.addEventListener('click', function() {
@@ -42,15 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
         questionsContentCytosol.style.display = 'block';
     });
 
-    definitionButtonEukaryotic.addEventListener('click', function() {
-        hideAllContent();
-        definitionsContentEukaryotic.style.display = 'block';
-    });
-
-    videoButtonEukaryotic.addEventListener('click', function() {
-        hideAllContent();
-        videoContentEukaryotic.style.display = 'block';
-    });
 
 
     const questionFormCytosol = document.getElementById('questionsFormCytosol');
@@ -63,22 +47,22 @@ document.addEventListener('DOMContentLoaded', function() {
 // Checking Multiple Choice Question 1
 const selectedOption1 = document.querySelector('input[name="question1"]:checked');
 const feedback1 = document.getElementById('feedback1');
-if (selectedOption1 && selectedOption1.value === "option1") {
-                feedback1.textContent = 'Correct!';
+if (selectedOption1 && selectedOption1.value === "option2") {
+                feedback1.textContent = 'Correct!, Protein pumps are membrane proteins that carry out active transport. They require the energy to pump molecules up their concentration gradient. ';
                 feedback1.style.color = 'green';
             } else {
-                feedback1.textContent = 'Incorrect. Glucose is a hexose sugar, meaning it has six carbon atoms, while ribose is a pentose sugar, having five carbon atoms. ';
+                feedback1.textContent = 'Incorrect. Protein channels (Choice A), protein carriers (Choice C), and aquaporins (Choice D) all conduct passive transport. ';
                 feedback1.style.color = 'red';
             }
 
             // Checking Multiple Choice Question 2
             const selectedOption2 = document.querySelector('input[name="question2"]:checked');
             const feedback2 = document.getElementById('feedback2');
-            if (selectedOption2 && selectedOption2.value === "option1") {
-                feedback2.textContent = 'Correct!';
+            if (selectedOption2 && selectedOption2.value === "option3") {
+                feedback2.textContent = 'Correct! The solution used to bathe organs to be used in a transplant should have an osmolarity equal to that of the organ to be transplanted and so the solution is isotonic compared to the organ’s tissues.';
                 feedback2.style.color = 'green';
             } else {
-                feedback2.textContent = 'Incorrect. Note that in glucose the four lower carbon atoms have -OH on one side, and -H on the other';
+                feedback2.textContent = 'Incorrect. A solution with an osmolarity higher than that of the organ to be transplanted (Choice A) would cause tissue cells to shrivel, while a solution with an osmolarity lower than that of the organ to be transplanted (Choice B) would cause organ cells to burst. There are no described protocols that indicate that the solution should be mixed with cells from the organ to be transplanted (Choice D).';
                 feedback2.style.color = 'red';
             }
 
@@ -86,21 +70,21 @@ if (selectedOption1 && selectedOption1.value === "option1") {
             const selectedOption3 = document.querySelector('input[name="question3"]:checked');
             const feedback3 = document.getElementById('feedback3');
 
-            if (selectedOption1 && selectedOption1.value === "option3") { 
-                feedback3.textContent = 'Correct!';
+            if (selectedOption1 && selectedOption1.value === "option4") { 
+                feedback3.textContent = 'Correct! Choice D - Endocytosis is an example of active transport that moves large molecules, parts of a cell, or a cell from the cell’s exterior, into a cell’s interior. This is in accordance with the endosymbiotic theory, which is the most likely process by which mitochondria came to be eukaryotic organelles.';
                 feedback3.style.color = 'green';
             } else {
-                feedback3.textContent = 'Incorrect. In RNA molecules, ribose is a crucial component because it forms part of the backbone structure. Here is  a detailed explanation of its role  Ribose Structure in RNA Ribose is a pentose sugar, meaning it has five carbon atoms. In RNA, each ribose molecule is linked to one of the four nitrogenous bases adenine, guanine, cytosine, or uracil and a phosphate group Formation of the Backbone The backbone of RNA is formed by alternating ribose sugars and phosphate groups. This chain of ribose and phosphate gives RNA its structural framework. Specifically, the phosphate group of one nucleotide bonds to the 3 carbon of the ribose sugar of the next nucleotide, creating a sugar-phosphate-sugar chain.';
+                feedback3.textContent = 'Incorrect. Choice A – Osmosis is an example of passive transport, which involves the movement of water across a semi-permeable membrane. Choice B - Exocytosis is an example of active transport that moves large molecules out of the cell to the cell’s exterior. Choice C – Apoptosis is the process of programmed cell death.';
                 feedback3.style.color = 'red';
             }
 // question 4 
             const selectedOption4 = document.querySelector('input[name="question4"]:checked');
             const feedback4 = document.getElementById('feedback4');
-            if (selectedOption4 && selectedOption4.value === "option3") {
-                feedback4.textContent = 'Correct!';
+            if (selectedOption4 && selectedOption4.value === "option1") {
+                feedback4.textContent = 'Correct! The image shows endocytosis, a form of active transport.';
                 feedback4.style.color = 'green';
             } else {
-                feedback4.textContent = 'Incorrect. Option C: Correct Answer Monosaccharide: Glucose is indeed a monosaccharide, which means it is a simple sugar with a basic molecular structure. It cannot be broken down into simpler sugars, which is characteristic of monosaccharides. Role in Energy Production: Glucose is central to cellular respiration, a metabolic process that cells use to generate energy. In this process, glucose is broken down to produce adenosine triphosphate (ATP), the primary energy carrier in cells.';
+                feedback4.textContent = 'Incorrect. Choices B and C are incorrect since they are types of passive transport. Choice D is incorrect since this is endocytosis, not exocytosis.';
                 feedback4.style.color = 'red';
             }
 
@@ -108,16 +92,22 @@ if (selectedOption1 && selectedOption1.value === "option1") {
             const selectedOption5 = document.querySelector('input[name="question5"]:checked');
             const feedback5 = document.getElementById('feedback5');
             if (selectedOption5 && selectedOption5.value === "option1") {
-                feedback5.textContent = 'Correct! ';
+                feedback5.textContent = 'Correct! Red blood cells placed in a hypertonic solution shrivel or become crenated, as shown in micrograph A. Plant cells undergo plasmolysis.';
                 feedback5.style.color = 'green';
             } else {
-                feedback5.textContent = 'Incorrect. Option B and Option C do not accurately describe the difference between ribose and deoxyribose. Deoxyribose does not have one less oxygen atom on the first carbon, nor does ribose have an extra hydroxyl group on the fifth carbon. Both sugars have the same configuration on the first and fifth carbons';
+                feedback5.textContent = 'Incorrect. Red blood cells placed in a hypotonic solution (Choice B) or distilled water (Choice D) would swell and eventually burst, as shown in micrograph C. Cells placed in an isotonic solution (Choice C) would show no change in appearance, as shown in micrograph B.';
                 feedback5.style.color = 'red';
             }
 
+
+
+
+
         });
     }
+   
 });
+
     hideAllContent();
 
 window.onload = hideAllContent;

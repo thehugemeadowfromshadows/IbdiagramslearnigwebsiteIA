@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIOMAPS</title>
+    <link rel="stylesheet" href="1.5.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="BIOMAPS.jpg" height="150" alt="Logo">
+                <h1>BIOMAPS</h1>
+            </div>
+            <hr>
+            <nav class="navbar" id="navbar">
+                <ul>
+                    <li><a href="index.html">Home page</a></li>
+                    <li><a href="SLtopic.html">SL topics</a></li>
+                    <li><a href="HLtopic.html">HL topics</a></li>
+                    <li><a href="login.html">Log in</a></li>
+                    <li class="navbar-toggle" id="navbar-toggle">&#9776;</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main-container">
+        <aside class="sidebar">
+            <!-- Cytosol Sidebar Section -->
+            <section id="cytosol-info" class="sidebar-section">
+                <div id="cytosol-buttons">
+                    <button id="definitionButtonCytosol">Definition</button>
+                    <button id="videoButtonCytosol">Video for Clarification</button>
+                    <button id="questionsButtonCytosol">Exam Style Questions</button>
+                </div>
+                <h2>Cell Division</h2>
+                <p>Cell division is a biological process in which a parent cell divides into two or more daughter cells. It is a fundamental process in all living organisms that enables growth, development, and reproduction</p>
+            </section>
+
+        </aside>
+        <div class="content">
+            <!-- Content for the Cytosol Information -->
+            <div class="cytosol-content">
+                <div id="definitionsContentCytosol" class="content-section" style="display: none;">
+                    <h2>Cell cycle</h2>
+                        <img src="cell cycle.png" alt="Eukary">
+                
+                </img>
+<h2>Key thing to know about it</h2>
+<p>
+    A cell's life consists of a series of phases called the cell cycle. During interphase, cells perform their normal functions. They also prepare for division. Cells grow and create copies of their organelles, replicate their DNA, and synthesize proteins during the periods of interphase. The cell then divides during mitosis and cytokinesis, creating two daughter cells that enter interphase again. Some cells, such as neurons, don't undergo division. These cells don't participate in the cell cycle and are said to be in G0 phase
+</p>
+
+            
+
+
+                    <h2>Mitosis</h2>
+                    <video width="320" height="240" autoplay loop muted>
+                        <source src="mitosis.mp4" type="video/mp4">
+                    </video>
+                    <p>
+                        <strong>Purpose of Mitosis</strong>  Mitosis is a process of cell division that results in two genetically identical daughter cells from a single parent cell. It is essential for growth, tissue repair, and regeneration in multicellular organisms.
+
+<strong>Phases of Mitosis</strong> Mitosis is divided into several stages: prophase, metaphase, anaphase, and telophase, followed by cytokinesis.
+
+<strong>Prophase:</strong>Chromosomes condense and become visible, the nuclear membrane dissolves, and the mitotic spindle forms.
+
+<strong>Metaphase:</strong> Chromosomes align at the metaphase plate (cell's equator).
+
+<strong>Anaphase:</strong> Sister chromatids (now individual chromosomes) are pulled apart toward opposite poles of the cell.
+
+<strong>Telophase:</strong> Chromosomes decondense, nuclear membranes reform around the two sets of chromosomes, and the spindle fibers disappear.
+
+<strong>Cytokinesis:</strong> The cytoplasm divides, resulting in two separate cells.
+                    
+            </p>
+
+
+
+
+                </div>
+                <div id="videoContentCytosol" class="content-section" style="display: none;">
+                    
+                    <h2>Mitosis, in depth</h2>
+                    <video width="320" height="240" controls>
+                            <source src="Mitosis - Stages of Mitosis _ Cells _ Biology _ FuseSchool.mp4" type="video/mp4">
+                    </video>
+
+
+
+                <!--The questions for cytosol-->
+                <div id="questionsContentCytosol" class="content-section" style="display: none;">
+                    <h2> <h2>IB Biology 1.5 Origin of cells: Sample Questions</h2></h2>
+                    <form id="questionsForm">
+
+
+ <!-- Question 1 -->
+<p><strong>Q1: Which statement(s) about the endosymbiotic theory is/are true?</strong></p>
+<img src="screennnnnnnnnnnn.png" alt="Eukary">
+<ul class="multiple-choice">
+    <li><input type="radio" name="question1" value="option1"> A. II only </li>
+    <li><input type="radio" name="question1" value="option2"> B. I only </li>
+    <li><input type="radio" name="question1" value="option3"> C. II and III only </li>
+    <li><input type="radio" name="question1" value="option4"> D. I, II and III </li>
+</ul>
+<div id="feedback1"></div>
+
+<!-- Question 2 -->
+<p><strong>Q2: Whose experiments disproved spontaneous generation?</strong></p>
+<ul class="multiple-choice">
+    <li><input type="radio" name="question2" value="option1"> A. Miller and Urey </li>
+    <li><input type="radio" name="question2" value="option2"> B. Louis Pasteur </li>
+    <li><input type="radio" name="question2" value="option3"> C. Rosalind Franklin </li>
+    <li><input type="radio" name="question2" value="option4"> D. Meselson and Stahl </li>
+</ul>
+<div id="feedback2"></div>
+
+<!-- Question 3 -->
+<p><strong>Q3: Which statement provides evidence for the endosymbiotic theory?</strong></p>
+<ul class="multiple-choice">
+    <li><input type="radio" name="question3" value="option1"> A. Phospholipids readily form bilayers. </li>
+    <li><input type="radio" name="question3" value="option2"> B. Chloroplasts possess a double membrane. </li>
+    <li><input type="radio" name="question3" value="option3"> C. RNA is self-replicating. </li>
+    <li><input type="radio" name="question3" value="option4"> D. Mitochondria possess a single membrane. </li>
+</ul>
+<div id="feedback3"></div>
+
+<!-- Question 4 -->
+<p><strong>Q4: The base sequence between two species was found to be 78% the same, while the order of amino acids found in the same cell types between two species was 82% the same. What may be the reason for this?</strong></p>
+<ul class="multiple-choice">
+    <li><input type="radio" name="question4" value="option1"> A. The genetic code is degenerate. </li>
+    <li><input type="radio" name="question4" value="option2"> B. Mutations occur more frequently in DNA that codes for proteins. </li>
+    <li><input type="radio" name="question4" value="option3"> C. Techniques used to analyse base sequences of DNA are less reliable. </li>
+    <li><input type="radio" name="question4" value="option4"> D. The genetic code is universal. </li>
+</ul>
+<div id="feedback4"></div>
+
+
+<!-- Question 5 -->
+<p><strong>Question 5: Louis Pasteur's famous experiments disproving spontaneous generation were replicated by placing broth into various flasks. Which two flasks would show the presence of microorganisms in the results?</strong></p>
+<img src="pastauersimagedisaproving.png" alt="Eukary">
+
+<ul class="multiple-choice">
+    <li><input type="radio" name="question5" value="option1"> A. R and S</li>
+    <li><input type="radio" name="question5" value="option2"> B. S and Q</li>
+    <li><input type="radio" name="question5" value="option3"> C. Q and R</li>
+    <li><input type="radio" name="question5" value="option4"> D. P and Q</li>
+</ul>
+
+
+<div id="feedback5"></div>
+
+<!--Q6-->
+<p><strong>Question 6: Which statement applies to both mitochondria and prokaryotes?</strong></p>
+
+
+<ul class="multiple-choice">
+    <li><input type="radio" name="question6" value="option1"> A.  They both contain DNA</li>
+    <li><input type="radio" name="question6" value="option2"> B.  They both have flagella</li>
+    <li><input type="radio" name="question6" value="option3"> C.  They both contain lysosomes</li>
+    <li><input type="radio" name="question6" value="option4"> D.   They both have a cell wall</li>
+
+</ul>
+
+<div id="feedback6"></div>
+<button type="submit">Submit Answers</button>
+
+<!-- Question 7 -->
+<h2>Paper 2: Question</h2>
+<p><strong>(Q7) Do these questions, they are medium difficulty</strong></p>
+<h3>(i) Explain how the products of the light-dependent stage of photosynthesis are used in the light-independent stage to convert carbon dioxide into organic substances</h3>
+<textarea id="answer7i" name="answer7i" rows="4" cols="50"></textarea><br>
+<h3>(ii) Explain how Louis Pasteur's experiments disproved the theory of spontaneous generation.</h3>
+<textarea id="answer7ii" name="answer7ii" rows="4" cols="50"></textarea><br>
+<h3>(iii) Describe the evidence for the endosymbiotic theory.</h3>
+<textarea id="answer7iii" name="answer7iii" rows="4" cols="50"></textarea><br>
+<p id="feedback7i"></p>
+<p id="feedback7ii"></p>
+<p id="feedback7iii"></p>
+
+<button id="evaluateButton">Check Answers</button>
+<script src="evaluetq1.5question6.js"></script>
+
+ </form>
+                </div>
+
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <script type="module" src="1.5.js"></script>
+</body>
+</html>
